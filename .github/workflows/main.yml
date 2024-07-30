@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-name: Crave Builder
+name: Build Los21
 on:
   workflow_dispatch:
 
@@ -19,8 +19,6 @@ jobs:
       run: |
           sudo apt-get install repo
           sudo apt-get install git
-          sudo apt-get update
-          sudo apt-get upgrade
           repo init -u https://github.com/LineageOS/android.git -b lineage-21.0
           repo sync
           git config --global user.email "balazs.kokai.builds@gmail.com"
