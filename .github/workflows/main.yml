@@ -21,7 +21,7 @@ jobs:
           sudo apt-get install git
           sudo apt-get update
           sudo apt-get upgrade
-          repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs
+          repo init -u https://github.com/LineageOS/android.git -b lineage-21.0
           repo sync
           git config --global user.email "balazs.kokai.builds@gmail.com"
           git config --global user.name "balazskokai"
